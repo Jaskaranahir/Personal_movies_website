@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@200,400;1,500&family=Outfit:wght@300&family=Poppins:ital,wght@0,300;0,600;1,300&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+
+
+body{
+	background-color: black;
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+header{
+	padding: 2rem;
+	display: flex;
+	background: url("design.jpg");
+	justify-content: space-around;
+	background-color: sienna;
+}
+
+.opening{
+	align-items: center;
+	text-align: right;
+	color: lightcoral;
+	size: 19;
+	font-family: cursive;
+}
+
+.search{
+	background-color: transparent;
+	border: 2px solid navajowhite;
+	padding: 0.4rem 1.1rem;
+	border-radius: 51px;
+	font-size: 1rem;
+	color: white;
+	font-family: inherit;
+
+}
+
+.search::placeholder{
+	color: white;
+}
+
+main{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.film{
+	width: 301px;
+	margin: 1rem;
+	border-radius: 3px;
+	box-shadow: 0.3px 4px 5px rgba(0,0,0,0.1);
+	background-color: black;
+	position: relative;
+	overflow: hidden;
+}
+
+.film img{
+	width: 100%;
+}
+
+.film-info{
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0.5rem 1.1rem 1 rem;
+	letter-spacing: 0.5px;
+}
+
+.film-info h3{
+	margin-top: 0;
+}
+
+.film-info span{
+	background-color: whitesmoke;
+}
+
+.film-info span.green{
+	color: lightgreen;
+}
+
+.film-info span.orange{
+	color: orange;
+}
+
+.film-info span.red{
+	color: red;
+}
+
+.outline{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: whitesmoke;
+	padding: 1.1rem;
+	max-height: 100%;
+	transform: translateY(101%);
+	transition: transform 0.5s ease-in;
+}
+
+.film:hover .outline{
+	transform:translateY(0);
+
+}
+
+
+
+
+
+
